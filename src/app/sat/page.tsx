@@ -141,14 +141,7 @@ const rwDomains: Domain[] = [
   },
 ];
 
-/*
-  PREPNEST ORIGINAL QUESTIONS
-
-  These are original practice questions written for PrepNest.
-  They are designed around the current SAT content domains and skills,
-  but are not copied from College Board materials.
-*/
-
+/* PrepNest Original content. These are not copied College Board questions. */
 const mathQuestions: Question[] = [
   {
     id: "m1-01",
@@ -177,8 +170,7 @@ const mathQuestions: Question[] = [
       "A school has 800 students. If 35% of the students participate in at least one after-school activity, how many students participate?",
     choices: ["240", "260", "280", "320"],
     answer: "2",
-    explanation:
-      "35% of 800 is 0.35 × 800 = 280.",
+    explanation: "35% of 800 is 0.35 × 800 = 280.",
   },
   {
     id: "m1-03",
@@ -208,7 +200,7 @@ const mathQuestions: Question[] = [
     choices: ["6", "9", "12", "18"],
     answer: "2",
     explanation:
-      "By the Pythagorean theorem, x² + 9² = 15². Thus x² = 225 − 81 = 144, so x = 12.",
+      "By the Pythagorean theorem, x² + 9² = 15². Thus x² = 144, so x = 12.",
   },
   {
     id: "m1-05",
@@ -221,11 +213,10 @@ const mathQuestions: Question[] = [
     prompt:
       "The system 3x + 2y = 19 and x − y = 3 has solution (x, y). What is the value of x + y?",
     choices: ["5", "7", "9", "11"],
-    answer: "2",
+    answer: "1",
     explanation:
-      "From x − y = 3, x = y + 3. Substituting gives 3(y + 3) + 2y = 19, so 5y = 10 and y = 2. Thus x = 5 and x + y = 7.",
+      "From x − y = 3, x = y + 3. Then 3(y + 3) + 2y = 19, so y = 2 and x = 5. Therefore x + y = 7.",
   },
-
   {
     id: "m2-high-01",
     section: "math",
@@ -274,7 +265,7 @@ const mathQuestions: Question[] = [
     choices: ["−8", "−1", "6", "8"],
     answer: "2",
     explanation:
-      "The center is (4, −1) and the radius is 7. The point directly above the center has y = −1 + 7 = 6.",
+      "The center is (4, −1) and the radius is 7. Directly above the center gives y = −1 + 7 = 6.",
   },
   {
     id: "m2-high-04",
@@ -286,9 +277,9 @@ const mathQuestions: Question[] = [
     type: "numeric",
     prompt:
       "A quantity is modeled by P(t) = 600(1.05)^t. What is P(2) to the nearest whole number?",
-    answer: "661",
+    answer: "662",
     explanation:
-      "P(2) = 600(1.05)² = 600(1.1025) = 661.5, which rounds to 662. Therefore the correct answer is 662.",
+      "P(2) = 600(1.05)² = 600(1.1025) = 661.5, which rounds to 662.",
   },
   {
     id: "m2-high-05",
@@ -310,7 +301,6 @@ const mathQuestions: Question[] = [
     explanation:
       "The fixed fee is 18 and the variable cost is 7x. At most 130 means 18 + 7x ≤ 130.",
   },
-
   {
     id: "m2-low-01",
     section: "math",
@@ -319,8 +309,7 @@ const mathQuestions: Question[] = [
     skill: "Linear equations",
     difficulty: "Easy",
     type: "choice",
-    prompt:
-      "If 5x − 8 = 27, what is the value of x?",
+    prompt: "If 5x − 8 = 27, what is the value of x?",
     choices: ["5", "6", "7", "8"],
     answer: "2",
     explanation:
@@ -349,12 +338,11 @@ const mathQuestions: Question[] = [
     skill: "Quadratic equations",
     difficulty: "Medium",
     type: "choice",
-    prompt:
-      "Which value of x satisfies x² − 6x + 8 = 0?",
+    prompt: "Which value of x satisfies x² − 6x + 8 = 0?",
     choices: ["1", "2", "5", "7"],
     answer: "1",
     explanation:
-      "Factor the equation as (x − 2)(x − 4) = 0. Thus x = 2 or x = 4. Among the choices, 2 works.",
+      "Factor as (x − 2)(x − 4) = 0. Among the choices, x = 2 works.",
   },
   {
     id: "m2-low-04",
@@ -368,8 +356,7 @@ const mathQuestions: Question[] = [
       "A rectangle has length 14 and width 9. What is its area?",
     choices: ["23", "46", "126", "252"],
     answer: "2",
-    explanation:
-      "Area = length × width = 14 × 9 = 126.",
+    explanation: "Area = length × width = 14 × 9 = 126.",
   },
   {
     id: "m2-low-05",
@@ -431,7 +418,7 @@ const rwQuestions: Question[] = [
     ],
     answer: "1",
     explanation:
-      "The researchers say that the evidence requires further investigation, indicating that it is initial rather than definitive.",
+      "The evidence requires further investigation, indicating that it is initial rather than definitive.",
   },
   {
     id: "r1-03",
@@ -490,9 +477,8 @@ const rwQuestions: Question[] = [
     ],
     answer: "0",
     explanation:
-      "The advantage appeared specifically on questions requiring connections among ideas, supporting the inference in choice A.",
+      "The advantage appeared specifically on questions requiring connections among ideas.",
   },
-
   {
     id: "r2-high-01",
     section: "rw",
@@ -535,7 +521,7 @@ const rwQuestions: Question[] = [
     ],
     answer: "1",
     explanation:
-      "The claim concerns adaptation of nesting behavior to urban environments, so evidence comparing urban and rural use of artificial nesting sites is most direct.",
+      "The claim concerns adaptation of nesting behavior to urban environments, so an urban-rural comparison is most direct.",
   },
   {
     id: "r2-high-03",
@@ -550,7 +536,7 @@ const rwQuestions: Question[] = [
     choices: ["are", "were", "is", "have been"],
     answer: "2",
     explanation:
-      "The subject is “collection,” which is singular. The prepositional phrase “of photographs...” does not change the subject.",
+      "The subject is “collection,” which is singular. The phrase “of photographs” does not change the subject.",
   },
   {
     id: "r2-high-04",
@@ -561,7 +547,9 @@ const rwQuestions: Question[] = [
     difficulty: "Hard",
     type: "choice",
     passage:
-      "A student has taken these notes:\n\n• Some coral species can tolerate short periods of unusually warm water.\n• Longer periods of warming can damage coral tissue.\n• Researchers are studying whether heat-tolerant coral populations can recover more quickly.\n\nThe student wants to emphasize the researchers' goal. Which choice best accomplishes this goal?",
+      "A student has taken these notes:\n\n• Some coral species can tolerate short periods of unusually warm water.\n• Longer periods of warming can damage coral tissue.\n• Researchers are studying whether heat-tolerant coral populations can recover more quickly.",
+    prompt:
+      "The student wants to emphasize the researchers' goal. Which choice best accomplishes this goal?",
     choices: [
       "Some coral species tolerate short periods of unusually warm water.",
       "Long periods of warming can damage coral tissue.",
@@ -592,9 +580,8 @@ const rwQuestions: Question[] = [
     ],
     answer: "1",
     explanation:
-      "The passage contrasts an earlier interpretation with new evidence that has led scholars to reconsider it.",
+      "The passage contrasts an earlier interpretation with new evidence that led scholars to reconsider it.",
   },
-
   {
     id: "r2-low-01",
     section: "rw",
@@ -615,7 +602,7 @@ const rwQuestions: Question[] = [
     ],
     answer: "0",
     explanation:
-      "The only finding described is that students taking short breaks reported less fatigue.",
+      "The finding described is that students taking short breaks reported less fatigue.",
   },
   {
     id: "r2-low-02",
@@ -705,11 +692,9 @@ const allQuestions = [...mathQuestions, ...rwQuestions];
 function isCorrect(question: Question, answer?: string) {
   if (!answer || answer.trim() === "") return false;
 
-  if (question.type === "numeric") {
-    return answer.trim() === question.answer;
-  }
-
-  return answer === question.answer;
+  return question.type === "numeric"
+    ? answer.trim() === question.answer
+    : answer === question.answer;
 }
 
 function formatTime(seconds: number) {
@@ -727,15 +712,12 @@ function formatTime(seconds: number) {
 function getQuestionPath(
   questions: Question[],
   answers: Record<string, string>
-) {
-  const moduleOne = questions.filter(
-    (question) => question.module === 1
-  );
+): "higher" | "foundation" {
+  const moduleOne = questions.filter((q) => q.module === 1);
 
   const score = moduleOne.reduce(
-    (total, question) =>
-      total +
-      (isCorrect(question, answers[question.id]) ? 1 : 0),
+    (total, q) =>
+      total + (isCorrect(q, answers[q.id]) ? 1 : 0),
     0
   );
 
@@ -747,87 +729,89 @@ export default function SATPage() {
   const [mode, setMode] = useState<Mode>("learn");
 
   const [practiceDomain, setPracticeDomain] = useState("All");
+
   const [practiceDifficulty, setPracticeDifficulty] =
     useState<"All" | Difficulty>("All");
+
   const [practiceIndex, setPracticeIndex] = useState(0);
   const [practiceAnswer, setPracticeAnswer] = useState("");
   const [practiceChecked, setPracticeChecked] = useState(false);
 
   const [testModule, setTestModule] = useState<1 | 2>(1);
   const [testIndex, setTestIndex] = useState(0);
-  const [testAnswers, setTestAnswers] = useState<
-    Record<string, string>
-  >({});
+
+  const [testAnswers, setTestAnswers] =
+    useState<Record<string, string>>({});
+
   const [moduleScores, setModuleScores] = useState<number[]>([]);
   const [moduleOneScore, setModuleOneScore] = useState(0);
+
   const [testFinishedModule, setTestFinishedModule] =
     useState(false);
+
   const [testFinished, setTestFinished] = useState(false);
-  const [testPath, setTestPath] = useState<
-    "higher" | "foundation" | null
-  >(null);
+
+  const [testPath, setTestPath] =
+    useState<"higher" | "foundation" | null>(null);
+
   const [secondsLeft, setSecondsLeft] = useState(600);
 
-  const domains = section === "math" ? mathDomains : rwDomains;
-  const questions =
-    section === "math" ? mathQuestions : rwQuestions;
+  const domains = section === "math"
+    ? mathDomains
+    : rwDomains;
 
-  const filteredPractice = useMemo(() => {
-    return allQuestions.filter((question) => {
-      const matchesSection = question.section === section;
+  const questions = section === "math"
+    ? mathQuestions
+    : rwQuestions;
 
-      const matchesDomain =
-        practiceDomain === "All" ||
-        question.domain === practiceDomain;
-
-      const matchesDifficulty =
-        practiceDifficulty === "All" ||
-        question.difficulty === practiceDifficulty;
-
-      return (
-        matchesSection &&
-        matchesDomain &&
-        matchesDifficulty
-      );
-    });
-  }, [
-    section,
-    practiceDomain,
-    practiceDifficulty,
-  ]);
+  const filteredPractice = useMemo(
+    () =>
+      allQuestions.filter(
+        (q) =>
+          q.section === section &&
+          (practiceDomain === "All" ||
+            q.domain === practiceDomain) &&
+          (practiceDifficulty === "All" ||
+            q.difficulty === practiceDifficulty)
+      ),
+    [section, practiceDomain, practiceDifficulty]
+  );
 
   const currentPracticeQuestion =
     filteredPractice[practiceIndex];
 
   const testQuestions = useMemo(() => {
     if (testModule === 1) {
-      return questions.filter(
-        (question) => question.module === 1
-      );
+      return questions.filter((q) => q.module === 1);
     }
-
-    const path = testPath ?? "foundation";
 
     const prefix =
       section === "math" ? "m2-" : "r2-";
 
     const target =
-      path === "higher"
-        ? `${prefix}high`
-        : `${prefix}low`;
+      `${prefix}${
+        (testPath ?? "foundation") === "higher"
+          ? "high"
+          : "low"
+      }`;
 
     return questions.filter(
-      (question) =>
-        question.module === 2 &&
-        question.id.startsWith(target)
+      (q) =>
+        q.module === 2 &&
+        q.id.startsWith(target)
     );
-  }, [questions, testModule, testPath, section]);
+  }, [
+    questions,
+    testModule,
+    testPath,
+    section,
+  ]);
 
   const currentTestQuestion =
     testQuestions[testIndex];
 
   const answeredCount = testQuestions.filter(
-    (question) => Boolean(testAnswers[question.id])
+    (q) => Boolean(testAnswers[q.id])
   ).length;
 
   const allAnswered =
@@ -843,14 +827,36 @@ export default function SATPage() {
       return;
     }
 
-    const timer = window.setInterval(() => {
-      setSecondsLeft((current) =>
-        current > 0 ? current - 1 : 0
-      );
-    }, 1000);
+    if (secondsLeft <= 0) {
+      if (allAnswered) {
+        if (testModule === 1) {
+          finishModuleOne();
+        } else {
+          finishModuleTwo();
+        }
+      }
 
-    return () => window.clearInterval(timer);
-  }, [mode, testFinished, testFinishedModule]);
+      return;
+    }
+
+    const timer = window.setTimeout(
+      () =>
+        setSecondsLeft(
+          (value) => value - 1
+        ),
+      1000
+    );
+
+    return () =>
+      window.clearTimeout(timer);
+  }, [
+    mode,
+    secondsLeft,
+    testFinished,
+    testFinishedModule,
+    allAnswered,
+    testModule,
+  ]);
 
   function resetPractice() {
     setPracticeIndex(0);
@@ -897,23 +903,30 @@ export default function SATPage() {
   }
 
   function checkPractice() {
-    if (!practiceAnswer) return;
-    setPracticeChecked(true);
+    if (practiceAnswer) {
+      setPracticeChecked(true);
+    }
   }
 
   function nextPractice() {
-    if (filteredPractice.length === 0) return;
+    if (!filteredPractice.length) {
+      return;
+    }
 
     setPracticeIndex(
-      (current) =>
-        (current + 1) % filteredPractice.length
+      (value) =>
+        (value + 1) %
+        filteredPractice.length
     );
+
     setPracticeAnswer("");
     setPracticeChecked(false);
   }
 
   function selectTestAnswer(answer: string) {
-    if (!currentTestQuestion) return;
+    if (!currentTestQuestion) {
+      return;
+    }
 
     setTestAnswers((current) => ({
       ...current,
@@ -923,11 +936,11 @@ export default function SATPage() {
 
   function calculateCurrentModuleScore() {
     return testQuestions.reduce(
-      (total, question) =>
+      (total, q) =>
         total +
         (isCorrect(
-          question,
-          testAnswers[question.id]
+          q,
+          testAnswers[q.id]
         )
           ? 1
           : 0),
@@ -936,18 +949,22 @@ export default function SATPage() {
   }
 
   function finishModuleOne() {
-    if (!allAnswered) return;
+    if (!allAnswered) {
+      return;
+    }
 
-    const score = calculateCurrentModuleScore();
+    const score =
+      calculateCurrentModuleScore();
 
     setModuleOneScore(score);
 
-    const path = getQuestionPath(
-      questions,
-      testAnswers
+    setTestPath(
+      getQuestionPath(
+        questions,
+        testAnswers
+      )
     );
 
-    setTestPath(path);
     setModuleScores([score]);
     setTestFinishedModule(true);
   }
@@ -960,9 +977,12 @@ export default function SATPage() {
   }
 
   function finishModuleTwo() {
-    if (!allAnswered) return;
+    if (!allAnswered) {
+      return;
+    }
 
-    const score = calculateCurrentModuleScore();
+    const score =
+      calculateCurrentModuleScore();
 
     setModuleScores((current) => [
       ...current,
@@ -984,7 +1004,8 @@ export default function SATPage() {
   const overallPercentage =
     totalQuestions > 0
       ? Math.round(
-          (totalCorrect / totalQuestions) * 100
+          (totalCorrect / totalQuestions) *
+            100
         )
       : 0;
 
@@ -994,12 +1015,12 @@ export default function SATPage() {
         ? "Math Learning"
         : "Reading & Writing Learning"
       : mode === "practice"
-      ? section === "math"
-        ? "Math Practice"
-        : "Reading & Writing Practice"
-      : section === "math"
-      ? `Math Mini Test · Module ${testModule}`
-      : `Reading & Writing Mini Test · Module ${testModule}`;
+        ? section === "math"
+          ? "Math Practice"
+          : "Reading & Writing Practice"
+        : section === "math"
+          ? `Math Mini Test · Module ${testModule}`
+          : `Reading & Writing Mini Test · Module ${testModule}`;
 
   return (
     <main className={styles.page}>
@@ -1024,7 +1045,9 @@ export default function SATPage() {
                   <>
                     Learn the SAT.
                     <br />
-                    <em>Build the foundation.</em>
+                    <em>
+                      Build the foundation.
+                    </em>
                   </>
                 )}
 
@@ -1032,7 +1055,9 @@ export default function SATPage() {
                   <>
                     Practice smarter.
                     <br />
-                    <em>Target your skills.</em>
+                    <em>
+                      Target your skills.
+                    </em>
                   </>
                 )}
 
@@ -1040,35 +1065,44 @@ export default function SATPage() {
                   <>
                     Test your skills.
                     <br />
-                    <em>Think like the SAT.</em>
+                    <em>
+                      Think like the SAT.
+                    </em>
                   </>
                 )}
               </h1>
 
               <p>
                 {mode === "learn" &&
-                  `Structured ${section === "math"
-                    ? "Math"
-                    : "Reading & Writing"} preparation based on the current SAT content domains.`}
+                  `Structured ${
+                    section === "math"
+                      ? "Math"
+                      : "Reading & Writing"
+                  } preparation based on the current SAT content domains.`}
 
                 {mode === "practice" &&
-                  `Focused ${section === "math"
-                    ? "Math"
-                    : "Reading & Writing"} practice with original PrepNest questions and explanations.`}
+                  `Focused ${
+                    section === "math"
+                      ? "Math"
+                      : "Reading & Writing"
+                  } practice with original PrepNest questions and explanations.`}
 
                 {mode === "test" &&
-                  `A ${section === "math"
-                    ? "Math"
-                    : "Reading & Writing"} mini practice test with two modules and an adaptive-path simulation.`}
+                  `A ${
+                    section === "math"
+                      ? "Math"
+                      : "Reading & Writing"
+                  } mini practice test with two modules and an adaptive-path simulation.`}
               </p>
 
               <div className={styles.heroActions}>
                 <button
+                  type="button"
                   className={styles.primaryButton}
-                  onClick={() =>
+                  onClick={
                     mode === "test"
-                      ? startTest()
-                      : openMode(mode)
+                      ? startTest
+                      : () => openMode(mode)
                   }
                 >
                   {mode === "learn" &&
@@ -1085,6 +1119,7 @@ export default function SATPage() {
 
                 {mode !== "test" && (
                   <button
+                    type="button"
                     className={styles.secondaryButton}
                     onClick={startTest}
                   >
@@ -1097,7 +1132,10 @@ export default function SATPage() {
             <div className={styles.heroPanel}>
               <div className={styles.heroPanelTop}>
                 <span>Current section</span>
-                <span className={styles.liveBadge}>
+
+                <span
+                  className={styles.liveBadge}
+                >
                   {section === "math"
                     ? "MATH"
                     : "R&W"}
@@ -1121,7 +1159,11 @@ export default function SATPage() {
                   `Module ${testModule} · ${answeredCount}/${testQuestions.length} answered`}
               </p>
 
-              <div className={styles.heroProgress}>
+              <div
+                className={
+                  styles.heroProgress
+                }
+              >
                 <span
                   style={{
                     width:
@@ -1140,7 +1182,9 @@ export default function SATPage() {
 
               <small>
                 {mode === "test"
-                  ? `${formatTime(secondsLeft)} remaining`
+                  ? `${formatTime(
+                      secondsLeft
+                    )} remaining`
                   : "PrepNest Original"}
               </small>
             </div>
@@ -1151,23 +1195,30 @@ export default function SATPage() {
       <div className={styles.content}>
         <div className={styles.sectionSwitcher}>
           <button
+            type="button"
             className={`${styles.sectionCard} ${
               section === "math"
                 ? styles.sectionActive
                 : ""
             }`}
-            onClick={() => changeSection("math")}
+            onClick={() =>
+              changeSection("math")
+            }
           >
-            <span className={styles.sectionIcon}>
+            <span
+              className={styles.sectionIcon}
+            >
               ∑
             </span>
 
             <span>
               <small>SAT SECTION</small>
+
               <strong>Math</strong>
+
               <em>
-                Algebra, advanced math, data analysis,
-                geometry & trigonometry
+                Algebra, advanced math, data
+                analysis, geometry & trigonometry
               </em>
             </span>
 
@@ -1175,12 +1226,15 @@ export default function SATPage() {
           </button>
 
           <button
+            type="button"
             className={`${styles.sectionCard} ${
               section === "rw"
                 ? styles.sectionActive
                 : ""
             }`}
-            onClick={() => changeSection("rw")}
+            onClick={() =>
+              changeSection("rw")
+            }
           >
             <span
               className={`${styles.sectionIcon} ${styles.rwIcon}`}
@@ -1190,10 +1244,14 @@ export default function SATPage() {
 
             <span>
               <small>SAT SECTION</small>
-              <strong>Reading & Writing</strong>
+
+              <strong>
+                Reading & Writing
+              </strong>
+
               <em>
-                Information, craft, expression and
-                conventions
+                Information, craft, expression
+                and conventions
               </em>
             </span>
 
@@ -1211,26 +1269,36 @@ export default function SATPage() {
               </span>
 
               <h2>
-                {mode === "learn" && "Learn"}
-                {mode === "practice" && "Practice"}
+                {mode === "learn" &&
+                  "Learn"}
+
+                {mode === "practice" &&
+                  "Practice"}
+
                 {mode === "test" &&
                   "Mini Practice Test"}
               </h2>
             </div>
 
-            <div className={styles.modeTabs}>
+            <div
+              className={styles.modeTabs}
+            >
               <button
+                type="button"
                 className={
                   mode === "learn"
                     ? styles.tabActive
                     : ""
                 }
-                onClick={() => openMode("learn")}
+                onClick={() =>
+                  openMode("learn")
+                }
               >
                 Learn
               </button>
 
               <button
+                type="button"
                 className={
                   mode === "practice"
                     ? styles.tabActive
@@ -1244,6 +1312,7 @@ export default function SATPage() {
               </button>
 
               <button
+                type="button"
                 className={
                   mode === "test"
                     ? styles.tabActive
@@ -1258,9 +1327,15 @@ export default function SATPage() {
 
           {mode === "learn" && (
             <div className={styles.learnArea}>
-              <div className={styles.domainHeader}>
+              <div
+                className={
+                  styles.domainHeader
+                }
+              >
                 <div>
-                  <span className={styles.kicker}>
+                  <span
+                    className={styles.kicker}
+                  >
                     {section === "math"
                       ? "MATH DOMAINS"
                       : "R&W DOMAINS"}
@@ -1271,96 +1346,142 @@ export default function SATPage() {
                   </h3>
 
                   <p>
-                    Start with a domain, learn the core
-                    concepts, then move directly into
-                    targeted practice.
+                    Start with a domain, learn
+                    the core concepts, then move
+                    directly into targeted practice.
                   </p>
                 </div>
 
-                <div className={styles.domainCount}>
+                <div
+                  className={
+                    styles.domainCount
+                  }
+                >
                   <strong>04</strong>
                   <span>domains</span>
                 </div>
               </div>
 
-              <div className={styles.domainGrid}>
-                {domains.map((domain, index) => (
-                  <article
-                    key={domain.name}
-                    className={styles.domainCard}
-                  >
-                    <div className={styles.domainTop}>
-                      <span>
-                        0{index + 1}
-                      </span>
-
-                      <b>{domain.icon}</b>
-                    </div>
-
-                    <h3>{domain.name}</h3>
-
-                    <strong>
-                      {domain.short}
-                    </strong>
-
-                    <p>
-                      {domain.description}
-                    </p>
-
-                    <div
-                      className={styles.topicList}
-                    >
-                      {domain.topics.map(
-                        (topic) => (
-                          <span key={topic}>
-                            {topic}
-                          </span>
-                        )
-                      )}
-                    </div>
-
-                    <button
+              <div
+                className={
+                  styles.domainGrid
+                }
+              >
+                {domains.map(
+                  (domain, index) => (
+                    <article
+                      key={domain.name}
                       className={
-                        styles.domainButton
+                        styles.domainCard
                       }
-                      onClick={() => {
-                        setPracticeDomain(
-                          domain.name
-                        );
-                        setPracticeDifficulty(
-                          "All"
-                        );
-                        resetPractice();
-                        setMode("practice");
-                      }}
                     >
-                      Practice this domain
-                      <span>→</span>
-                    </button>
-                  </article>
-                ))}
+                      <div
+                        className={
+                          styles.domainTop
+                        }
+                      >
+                        <span>
+                          0{index + 1}
+                        </span>
+
+                        <b>
+                          {domain.icon}
+                        </b>
+                      </div>
+
+                      <h3>
+                        {domain.name}
+                      </h3>
+
+                      <strong>
+                        {domain.short}
+                      </strong>
+
+                      <p>
+                        {domain.description}
+                      </p>
+
+                      <div
+                        className={
+                          styles.topicList
+                        }
+                      >
+                        {domain.topics.map(
+                          (topic) => (
+                            <span
+                              key={topic}
+                            >
+                              {topic}
+                            </span>
+                          )
+                        )}
+                      </div>
+
+                      <button
+                        type="button"
+                        className={
+                          styles.domainButton
+                        }
+                        onClick={() => {
+                          setPracticeDomain(
+                            domain.name
+                          );
+
+                          setPracticeDifficulty(
+                            "All"
+                          );
+
+                          resetPractice();
+
+                          setMode("practice");
+                        }}
+                      >
+                        Practice this domain
+                        <span>→</span>
+                      </button>
+                    </article>
+                  )
+                )}
               </div>
             </div>
           )}
 
           {mode === "practice" && (
-            <div className={styles.practiceArea}>
-              <div className={styles.practiceToolbar}>
+            <div
+              className={
+                styles.practiceArea
+              }
+            >
+              <div
+                className={
+                  styles.practiceToolbar
+                }
+              >
                 <div>
-                  <span className={styles.kicker}>
+                  <span
+                    className={
+                      styles.kicker
+                    }
+                  >
                     TARGETED PRACTICE
                   </span>
 
                   <h3>
-                    Work on exactly what you need.
+                    Work on exactly what
+                    you need.
                   </h3>
                 </div>
 
-                <div className={styles.filters}>
+                <div
+                  className={styles.filters}
+                >
                   <label>
                     Domain
+
                     <select
-                      value={practiceDomain}
+                      value={
+                        practiceDomain
+                      }
                       onChange={(event) => {
                         setPracticeDomain(
                           event.target.value
@@ -1372,39 +1493,51 @@ export default function SATPage() {
                         All domains
                       </option>
 
-                      {domains.map((domain) => (
-                        <option
-                          key={domain.name}
-                          value={domain.name}
-                        >
-                          {domain.name}
-                        </option>
-                      ))}
+                      {domains.map(
+                        (domain) => (
+                          <option
+                            key={domain.name}
+                            value={
+                              domain.name
+                            }
+                          >
+                            {domain.name}
+                          </option>
+                        )
+                      )}
                     </select>
                   </label>
 
                   <label>
                     Difficulty
+
                     <select
-                      value={practiceDifficulty}
+                      value={
+                        practiceDifficulty
+                      }
                       onChange={(event) => {
                         setPracticeDifficulty(
-                          event.target.value as
+                          event.target
+                            .value as
                             | "All"
                             | Difficulty
                         );
+
                         resetPractice();
                       }}
                     >
                       <option value="All">
                         All levels
                       </option>
+
                       <option value="Easy">
                         Easy
                       </option>
+
                       <option value="Medium">
                         Medium
                       </option>
+
                       <option value="Hard">
                         Hard
                       </option>
@@ -1419,14 +1552,24 @@ export default function SATPage() {
                     currentPracticeQuestion
                   }
                   answer={practiceAnswer}
-                  checked={practiceChecked}
-                  onSelect={setPracticeAnswer}
-                  onCheck={checkPractice}
-                  onNext={nextPractice}
+                  checked={
+                    practiceChecked
+                  }
+                  onSelect={
+                    setPracticeAnswer
+                  }
+                  onCheck={
+                    checkPractice
+                  }
+                  onNext={
+                    nextPractice
+                  }
                 />
               ) : (
                 <div
-                  className={styles.emptyState}
+                  className={
+                    styles.emptyState
+                  }
                 >
                   <span>∅</span>
                   <h3>
@@ -1441,28 +1584,39 @@ export default function SATPage() {
           )}
 
           {mode === "test" && (
-            <div className={styles.testArea}>
+            <div
+              className={
+                styles.testArea
+              }
+            >
               {!testFinished &&
                 !testFinishedModule &&
                 currentTestQuestion && (
                   <>
-                    <div className={styles.testHeader}>
+                    <div
+                      className={
+                        styles.testHeader
+                      }
+                    >
                       <div>
                         <span
                           className={
                             styles.kicker
                           }
                         >
-                          {section === "math"
+                          {section ===
+                          "math"
                             ? "MATH"
                             : "READING & WRITING"}
                         </span>
 
                         <h3>
-                          Module {testModule}
+                          Module{" "}
+                          {testModule}
                         </h3>
 
-                        {testModule === 2 &&
+                        {testModule ===
+                          2 &&
                           testPath && (
                             <span
                               className={
@@ -1486,7 +1640,8 @@ export default function SATPage() {
                           {answeredCount}/
                           {
                             testQuestions.length
-                          } answered
+                          }{" "}
+                          answered
                         </span>
 
                         <strong>
@@ -1503,17 +1658,23 @@ export default function SATPage() {
                       }
                     >
                       {testQuestions.map(
-                        (question, index) => (
+                        (
+                          question,
+                          index
+                        ) => (
                           <span
-                            key={question.id}
+                            key={
+                              question.id
+                            }
                             className={
-                              index === testIndex
+                              index ===
+                              testIndex
                                 ? styles.current
                                 : testAnswers[
-                                    question.id
-                                  ]
-                                ? styles.done
-                                : ""
+                                      question.id
+                                    ]
+                                  ? styles.done
+                                  : ""
                             }
                           />
                         )
@@ -1526,7 +1687,8 @@ export default function SATPage() {
                       }
                       answer={
                         testAnswers[
-                          currentTestQuestion.id
+                          currentTestQuestion
+                            .id
                         ]
                       }
                       onSelect={
@@ -1541,7 +1703,9 @@ export default function SATPage() {
                     >
                       <div>
                         <span>
-                          {currentTestQuestion.domain}
+                          {
+                            currentTestQuestion.domain
+                          }
                         </span>
 
                         <span>
@@ -1552,36 +1716,46 @@ export default function SATPage() {
                       </div>
 
                       {testIndex <
-                      testQuestions.length - 1 ? (
+                      testQuestions.length -
+                        1 ? (
                         <button
+                          type="button"
                           className={
                             styles.primaryButton
                           }
                           onClick={() =>
                             setTestIndex(
-                              (current) =>
-                                current + 1
+                              (value) =>
+                                value + 1
                             )
                           }
                         >
-                          Next question
-                          <span>→</span>
+                          Next question{" "}
+                          <span>
+                            →
+                          </span>
                         </button>
                       ) : (
                         <button
+                          type="button"
                           className={
                             styles.finishButton
                           }
-                          disabled={!allAnswered}
-                          onClick={
-                            testModule === 1
-                              ? finishModuleOne
-                              : finishModuleTwo
+                          disabled={
+                            !allAnswered
+                          }
+                          onClick={() =>
+                            testModule ===
+                            1
+                              ? finishModuleOne()
+                              : finishModuleTwo()
                           }
                         >
                           Finish Module{" "}
-                          {testModule}
-                          <span>✓</span>
+                          {testModule}{" "}
+                          <span>
+                            ✓
+                          </span>
                         </button>
                       )}
                     </div>
@@ -1595,8 +1769,10 @@ export default function SATPage() {
                             styles.warning
                           }
                         >
-                          Answer every question before
-                          finishing the module.
+                          Answer every
+                          question before
+                          finishing the
+                          module.
                         </p>
                       )}
                   </>
@@ -1606,7 +1782,9 @@ export default function SATPage() {
                 !testFinished && (
                   <ModuleComplete
                     module={1}
-                    score={moduleOneScore}
+                    score={
+                      moduleOneScore
+                    }
                     path={testPath}
                     onContinue={
                       continueToModuleTwo
@@ -1627,9 +1805,13 @@ export default function SATPage() {
           )}
         </section>
 
-        <section className={styles.resources}>
+        <section
+          className={styles.resources}
+        >
           <div>
-            <span className={styles.kicker}>
+            <span
+              className={styles.kicker}
+            >
               OFFICIAL RESOURCES
             </span>
 
@@ -1639,20 +1821,28 @@ export default function SATPage() {
             </h2>
 
             <p>
-              PrepNest questions are original. Use
-              official College Board resources for
-              official SAT questions and full-length
-              adaptive practice.
+              PrepNest questions are
+              original. Use official College
+              Board resources for official SAT
+              questions and full-length adaptive
+              practice.
             </p>
           </div>
 
-          <div className={styles.resourceGrid}>
+          <div
+            className={
+              styles.resourceGrid
+            }
+          >
             <a
               href="https://satsuite.collegeboard.org/sat/practice"
               target="_blank"
               rel="noreferrer"
             >
-              <span>College Board</span>
+              <span>
+                College Board
+              </span>
+
               <strong>
                 Official SAT practice ↗
               </strong>
@@ -1663,7 +1853,10 @@ export default function SATPage() {
               target="_blank"
               rel="noreferrer"
             >
-              <span>Khan Academy</span>
+              <span>
+                Khan Academy
+              </span>
+
               <strong>
                 Official SAT preparation ↗
               </strong>
@@ -1674,19 +1867,29 @@ export default function SATPage() {
               target="_blank"
               rel="noreferrer"
             >
-              <span>Student Question Bank</span>
+              <span>
+                Student Question Bank
+              </span>
+
               <strong>
                 Official question bank ↗
               </strong>
             </a>
           </div>
 
-          <div className={styles.source}>
+          <div
+            className={styles.source}
+          >
             <span />
-            <strong>PrepNest Original</strong>
+
+            <strong>
+              PrepNest Original
+            </strong>
+
             <em>
-              Original practice content aligned with
-              current SAT domains and skills.
+              Original practice content
+              aligned with current SAT
+              domains and skills.
             </em>
           </div>
         </section>
@@ -1710,27 +1913,45 @@ function PracticeCard({
   onCheck: () => void;
   onNext: () => void;
 }) {
-  const correct = isCorrect(question, answer);
+  const correct = isCorrect(
+    question,
+    answer
+  );
 
   return (
-    <article className={styles.practiceCard}>
-      <div className={styles.questionTop}>
+    <article
+      className={
+        styles.practiceCard
+      }
+    >
+      <div
+        className={
+          styles.questionTop
+        }
+      >
         <div>
-          <span className={styles.questionLabel}>
+          <span
+            className={
+              styles.questionLabel
+            }
+          >
             PREPNEST ORIGINAL
           </span>
 
-          <h3>{question.skill}</h3>
+          <h3>
+            {question.skill}
+          </h3>
         </div>
 
         <span
           className={
-            question.difficulty === "Hard"
+            question.difficulty ===
+            "Hard"
               ? styles.hard
               : question.difficulty ===
-                "Medium"
-              ? styles.medium
-              : styles.easy
+                  "Medium"
+                ? styles.medium
+                : styles.easy
           }
         >
           {question.difficulty}
@@ -1738,44 +1959,65 @@ function PracticeCard({
       </div>
 
       {question.passage && (
-        <div className={styles.passage}>
+        <div
+          className={
+            styles.passage
+          }
+        >
           {question.passage}
         </div>
       )}
 
-      <p className={styles.questionPrompt}>
+      <p
+        className={
+          styles.questionPrompt
+        }
+      >
         {question.prompt}
       </p>
 
-      {question.type === "numeric" ? (
+      {question.type ===
+      "numeric" ? (
         <input
-          className={styles.answerInput}
+          className={
+            styles.answerInput
+          }
           value={answer}
           inputMode="decimal"
           placeholder="Enter your answer"
           onChange={(event) =>
-            onSelect(event.target.value)
+            onSelect(
+              event.target.value
+            )
           }
         />
       ) : (
-        <div className={styles.choices}>
+        <div
+          className={styles.choices}
+        >
           {question.choices?.map(
             (choice, index) => {
-              const value = String(index);
+              const value =
+                String(index);
+
               const selected =
                 answer === value;
+
               const isAnswer =
-                question.answer === value;
+                question.answer ===
+                value;
 
               return (
                 <button
+                  type="button"
                   key={choice}
                   className={`${styles.choice} ${
                     selected
                       ? styles.choiceSelected
                       : ""
                   } ${
-                    checked && isAnswer
+                    checked &&
+                    isAnswer
                       ? styles.choiceCorrect
                       : ""
                   } ${
@@ -1795,7 +2037,9 @@ function PracticeCard({
                     )}
                   </span>
 
-                  <strong>{choice}</strong>
+                  <strong>
+                    {choice}
+                  </strong>
                 </button>
               );
             }
@@ -1820,34 +2064,51 @@ function PracticeCard({
           {!correct && (
             <p>
               Correct answer:{" "}
-              {question.type === "numeric"
+              {question.type ===
+              "numeric"
                 ? question.answer
                 : question.choices?.[
-                    Number(question.answer)
+                    Number(
+                      question.answer
+                    )
                   ]}
             </p>
           )}
 
-          <small>{question.explanation}</small>
+          <small>
+            {question.explanation}
+          </small>
         </div>
       )}
 
-      <div className={styles.cardAction}>
+      <div
+        className={styles.cardAction}
+      >
         {!checked ? (
           <button
-            className={styles.primaryButton}
+            type="button"
+            className={
+              styles.primaryButton
+            }
             disabled={!answer}
-            onClick={onCheck}
+            onClick={
+              onCheck
+            }
           >
-            Check answer
+            Check answer{" "}
             <span>✓</span>
           </button>
         ) : (
           <button
-            className={styles.primaryButton}
-            onClick={onNext}
+            type="button"
+            className={
+              styles.primaryButton
+            }
+            onClick={
+              onNext
+            }
           >
-            Next question
+            Next question{" "}
             <span>→</span>
           </button>
         )}
@@ -1866,38 +2127,66 @@ function TestCard({
   onSelect: (answer: string) => void;
 }) {
   return (
-    <article className={styles.testCard}>
-      <div className={styles.testQuestionMeta}>
-        <span>{question.domain}</span>
-        <span>{question.skill}</span>
+    <article
+      className={styles.testCard}
+    >
+      <div
+        className={
+          styles.testQuestionMeta
+        }
+      >
+        <span>
+          {question.domain}
+        </span>
+
+        <span>
+          {question.skill}
+        </span>
       </div>
 
       {question.passage && (
-        <div className={styles.testPassage}>
+        <div
+          className={
+            styles.testPassage
+          }
+        >
           {question.passage}
         </div>
       )}
 
-      <h3>{question.prompt}</h3>
+      <h3>
+        {question.prompt}
+      </h3>
 
-      {question.type === "numeric" ? (
+      {question.type ===
+      "numeric" ? (
         <input
-          className={styles.answerInputLarge}
+          className={
+            styles.answerInputLarge
+          }
           value={answer ?? ""}
           inputMode="decimal"
           placeholder="Enter your answer"
           onChange={(event) =>
-            onSelect(event.target.value)
+            onSelect(
+              event.target.value
+            )
           }
         />
       ) : (
-        <div className={styles.testChoices}>
+        <div
+          className={
+            styles.testChoices
+          }
+        >
           {question.choices?.map(
             (choice, index) => {
-              const value = String(index);
+              const value =
+                String(index);
 
               return (
                 <button
+                  type="button"
                   key={choice}
                   className={`${styles.testChoice} ${
                     answer === value
@@ -1933,7 +2222,10 @@ function ModuleComplete({
 }: {
   module: number;
   score: number;
-  path: "higher" | "foundation" | null;
+  path:
+    | "higher"
+    | "foundation"
+    | null;
   onContinue: () => void;
 }) {
   const percentage = Math.round(
@@ -1941,30 +2233,52 @@ function ModuleComplete({
   );
 
   return (
-    <div className={styles.resultScreen}>
-      <ProgressCircle percentage={percentage} />
+    <div
+      className={
+        styles.resultScreen
+      }
+    >
+      <ProgressCircle
+        percentage={percentage}
+      />
 
-      <span className={styles.kicker}>
+      <span
+        className={
+          styles.kicker
+        }
+      >
         MODULE {module} COMPLETE
       </span>
 
       <h2>
-        Nice work. Module {module} is finished.
+        Nice work. Module {module} is
+        finished.
       </h2>
 
       <p>
-        You answered <strong>{score}/5</strong>{" "}
+        You answered{" "}
+        <strong>
+          {score}/5
+        </strong>{" "}
         questions correctly.
       </p>
 
       {path && (
-        <div className={styles.adaptiveNotice}>
-          <span>MODULE 2 PATH</span>
+        <div
+          className={
+            styles.adaptiveNotice
+          }
+        >
+          <span>
+            MODULE 2 PATH
+          </span>
+
           <strong>
             {path === "higher"
               ? "Higher difficulty"
               : "Foundation"}
           </strong>
+
           <small>
             {path === "higher"
               ? "Your Module 1 performance qualifies you for the higher-difficulty practice path."
@@ -1974,10 +2288,15 @@ function ModuleComplete({
       )}
 
       <button
-        className={styles.primaryButton}
-        onClick={onContinue}
+        type="button"
+        className={
+          styles.primaryButton
+        }
+        onClick={
+          onContinue
+        }
       >
-        Continue to Module 2
+        Continue to Module 2{" "}
         <span>→</span>
       </button>
     </div>
@@ -1993,49 +2312,86 @@ function FinalResult({
   percentage: number;
   onRestart: () => void;
 }) {
+  const total = scores.reduce(
+    (sum, score) =>
+      sum + score,
+    0
+  );
+
   return (
-    <div className={styles.resultScreen}>
+    <div
+      className={
+        styles.resultScreen
+      }
+    >
       <ProgressCircle
-        percentage={percentage}
+        percentage={
+          percentage
+        }
       />
 
-      <span className={styles.kicker}>
+      <span
+        className={
+          styles.kicker
+        }
+      >
         MINI TEST COMPLETE
       </span>
 
-      <h2>Your practice result</h2>
+      <h2>
+        Your practice result
+      </h2>
 
       <p>
         You answered{" "}
         <strong>
-          {scores.reduce(
-            (sum, score) => sum + score,
-            0
-          )}
-          /10
+          {total}/10
         </strong>{" "}
         correctly.
       </p>
 
-      <div className={styles.resultCards}>
-        {scores.map((score, index) => (
-          <div key={index}>
-            <span>Module {index + 1}</span>
-            <strong>{score}/5</strong>
-          </div>
-        ))}
+      <div
+        className={
+          styles.resultCards
+        }
+      >
+        {scores.map(
+          (score, index) => (
+            <div
+              key={index}
+            >
+              <span>
+                Module{" "}
+                {index + 1}
+              </span>
+
+              <strong>
+                {score}/5
+              </strong>
+            </div>
+          )
+        )}
       </div>
 
-      <small className={styles.resultNote}>
-        This is PrepNest accuracy, not an official SAT
-        score.
+      <small
+        className={
+          styles.resultNote
+        }
+      >
+        This is PrepNest accuracy,
+        not an official SAT score.
       </small>
 
       <button
-        className={styles.primaryButton}
-        onClick={onRestart}
+        type="button"
+        className={
+          styles.primaryButton
+        }
+        onClick={
+          onRestart
+        }
       >
-        Retake mini test
+        Retake mini test{" "}
         <span>↻</span>
       </button>
     </div>
@@ -2047,24 +2403,35 @@ function ProgressCircle({
 }: {
   percentage: number;
 }) {
-  const safePercentage = Math.min(
-    100,
-    Math.max(0, percentage)
-  );
+  const safePercentage =
+    Math.min(
+      100,
+      Math.max(
+        0,
+        percentage
+      )
+    );
+
+  const degrees =
+    safePercentage * 3.6;
 
   return (
     <div
-      className={styles.progressCircle}
+      className={
+        styles.progressCircle
+      }
       style={{
-        background: `conic-gradient(
-          #7461ed ${safePercentage * 3.6}deg,
-          #e9e6ff ${safePercentage * 3.6}deg
-        )`,
+        background: `conic-gradient(#7461ed ${degrees}deg, #e9e6ff ${degrees}deg)`,
       }}
     >
       <div>
-        <strong>{safePercentage}%</strong>
-        <span>accuracy</span>
+        <strong>
+          {safePercentage}%
+        </strong>
+
+        <span>
+          accuracy
+        </span>
       </div>
     </div>
   );
