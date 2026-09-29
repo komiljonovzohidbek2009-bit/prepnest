@@ -706,3 +706,530 @@ select {
     gap: 7px;
   }
 }
+/* =========================================
+   SAT PAGE
+========================================= */
+
+.sat-page {
+  background: #ffffff;
+}
+
+.sat-hero {
+  padding: 95px 0 70px;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(91, 92, 226, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f8f8ff, #f0f1ff);
+}
+
+.sat-hero h1 {
+  margin-top: 12px;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+}
+
+.sat-hero h1 span {
+  color: #5b5ce2;
+}
+
+.sat-hero > .container > p {
+  max-width: 720px;
+  margin-top: 25px;
+  color: #626979;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.sat-hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.sat-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 760px;
+  margin-top: 55px;
+}
+
+.sat-info-grid > div {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid #e0e1f2;
+  border-radius: 14px;
+}
+
+.sat-info-grid strong {
+  display: block;
+  font-size: 27px;
+  margin-bottom: 4px;
+}
+
+.sat-info-grid span {
+  color: #777e8d;
+  font-size: 13px;
+}
+
+.sat-tabs-section {
+  border-bottom: 1px solid #e8e8ee;
+  background: white;
+}
+
+.sat-tabs {
+  display: flex;
+  gap: 30px;
+}
+
+.sat-tabs button {
+  padding: 19px 3px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #777e8d;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.sat-tabs button.active {
+  color: #5b5ce2;
+  border-bottom-color: #5b5ce2;
+}
+
+.sat-domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sat-domain-card {
+  padding: 30px;
+  border: 1px solid #e5e6ec;
+  border-radius: 18px;
+  background: white;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.sat-domain-card:hover {
+  transform: translateY(-4px);
+  border-color: #ccccf5;
+  box-shadow: 0 15px 35px rgba(17, 24, 39, 0.07);
+}
+
+.domain-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.domain-header > span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f0f0ff;
+  color: #5b5ce2;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.domain-number {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f0f0ff;
+  color: #5b5ce2;
+  font-weight: 850;
+}
+
+.sat-domain-card h3 {
+  font-size: 25px;
+  margin-bottom: 9px;
+}
+
+.sat-domain-card > p {
+  color: #737a89;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.topic-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #4d5565;
+  font-size: 13px;
+}
+
+.topic-item span {
+  color: #5b5ce2;
+  font-weight: 800;
+}
+
+.topic-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px 15px;
+  border: 1px solid #dddff0;
+  border-radius: 9px;
+  background: white;
+  color: #5b5ce2;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.topic-button:hover {
+  background: #f7f7ff;
+}
+
+.sat-rw-section {
+  background: #f8f8fb;
+  border-top: 1px solid #eeeeF3;
+  border-bottom: 1px solid #eeeeF3;
+}
+
+.official-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #f5f5ff;
+  border: 1px solid #ddddfa;
+}
+
+.official-card h2 {
+  margin: 8px 0 10px;
+  font-size: 31px;
+  letter-spacing: -1px;
+}
+
+.official-card p {
+  max-width: 680px;
+  color: #6e7585;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.official-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.sat-note-section {
+  padding: 35px 0 70px;
+}
+
+.sat-note {
+  padding: 20px 23px;
+  border: 1px solid #e7e7ed;
+  border-radius: 13px;
+  background: #fafafa;
+}
+
+.sat-note strong {
+  font-size: 13px;
+}
+
+.sat-note p {
+  margin-top: 6px;
+  color: #737a89;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* SAT PRACTICE */
+
+.practice-section {
+  background: #f8f8fb;
+  min-height: 720px;
+}
+
+.practice-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.practice-heading h2 {
+  margin-top: 7px;
+  font-size: 47px;
+  letter-spacing: -2px;
+}
+
+.practice-heading p {
+  margin-top: 9px;
+  color: #737a89;
+}
+
+.question-counter {
+  padding: 10px 15px;
+  border-radius: 9px;
+  background: white;
+  border: 1px solid #e2e3ea;
+  color: #5b5ce2;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.practice-filters {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 13px;
+  background: white;
+  border: 1px solid #e5e6ec;
+}
+
+.practice-filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.practice-filters label {
+  color: #666d7b;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.practice-filters select {
+  min-width: 220px;
+  padding: 10px 12px;
+  border: 1px solid #dfe0e7;
+  border-radius: 8px;
+  background: white;
+  color: #252936;
+  outline: none;
+}
+
+.question-card {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background: white;
+  border: 1px solid #e3e4ea;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(17, 24, 39, 0.05);
+}
+
+.question-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 27px;
+}
+
+.question-meta span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: #f1f1ff;
+  color: #5b5ce2;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.question-card h3 {
+  font-size: 21px;
+  line-height: 1.55;
+  margin-bottom: 28px;
+}
+
+.answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 16px;
+  border: 1px solid #dfe1e8;
+  border-radius: 10px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.answer-option > span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #d6d8e0;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.answer-option:hover {
+  border-color: #5b5ce2;
+  background: #fafaff;
+}
+
+.answer-option.selected {
+  border-color: #5b5ce2;
+  background: #f4f4ff;
+}
+
+.answer-option.correct {
+  border-color: #42a56a;
+  background: #effaf3;
+}
+
+.answer-option.incorrect {
+  border-color: #d95d5d;
+  background: #fff2f2;
+}
+
+.submit-answer {
+  margin-top: 25px;
+}
+
+.submit-answer:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.explanation-box {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f7f7fb;
+}
+
+.result {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.correct-result {
+  background: #e6f6eb;
+  color: #287b48;
+}
+
+.incorrect-result {
+  background: #fde8e8;
+  color: #a73737;
+}
+
+.explanation-box h4 {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.explanation-box p {
+  margin-bottom: 18px;
+  color: #656c7b;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.empty-practice {
+  padding: 70px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e6ec;
+  border-radius: 16px;
+}
+
+.empty-practice p {
+  margin-top: 7px;
+  color: #777e8d;
+}
+
+/* SAT MOBILE */
+
+@media (max-width: 800px) {
+  .sat-hero {
+    padding: 70px 0 55px;
+  }
+
+  .sat-hero h1 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+
+  .sat-hero > .container > p {
+    font-size: 16px;
+  }
+
+  .sat-hero-actions {
+    flex-direction: column;
+  }
+
+  .sat-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sat-domain-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .official-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+  }
+
+  .official-actions {
+    width: 100%;
+  }
+
+  .practice-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .practice-heading h2 {
+    font-size: 38px;
+  }
+
+  .practice-filters {
+    flex-direction: column;
+  }
+
+  .practice-filters select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .question-card {
+    padding: 23px;
+  }
+}
